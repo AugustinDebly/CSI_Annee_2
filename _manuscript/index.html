@@ -424,7 +424,10 @@ B_{\alpha,\beta}(NDVI) = \alpha NDVI + \beta
 <p><span id="eq-blinear"><span class="math display">\[
 \beta = \frac{1}{c}ln\left(\frac{b}{a+b-NDVI_{mean}}\right)-\frac{NDVI_{mean}}{c(a+b-NDVI_{mean})}
 \tag{4}\]</span></span></p>
-<p>To find <span class="math inline">\(a\)</span>,<span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span> we have 3 unknowns and 2 equations. We must add another constraint, let’s assume</p>
+<p>To find <span class="math inline">\(a\)</span>,<span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span> we have 3 unknowns and 2 equations. We must add another constraint :</p>
+<p><span id="eq-betaNDVInull"><span class="math display">\[
+\beta = \frac{1}{c}ln\left(\frac{b}{a+b}\right)
+\tag{5}\]</span></span></p>
 </section>
 </section>
 </section>

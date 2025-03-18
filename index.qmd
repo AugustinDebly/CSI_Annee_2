@@ -49,6 +49,10 @@ $$
 \beta = \frac{1}{c}ln\left(\frac{b}{a+b-NDVI_{mean}}\right)-\frac{NDVI_{mean}}{c(a+b-NDVI_{mean})}
 $$ {#eq-blinear}
 
-To find $a$,$b$ and $c$ we have 3 unknowns and 2 equations. We must add another constraint, let's assume 
+To find $a$,$b$ and $c$ we have 3 unknowns and 2 equations. We must add another constraint :
+
+$$
+\beta = \frac{1}{c}ln\left(\frac{b}{a+b}\right)
+$$ {#eq-betaNDVInull}
 
 # Scaling Bias
