@@ -45,6 +45,35 @@ ul.task-list li input[type="checkbox"] {
   }
 </style>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <meta name="citation_title" content="CSI DEBLY Augustin 2nd year">
 <meta name="citation_author" content="Augustin Debly">
@@ -366,9 +395,30 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="ndvi-biomass-relationship-in-microphytobenthic-studies-a-review">NDVI-Biomass relationship in microphytobenthic studies : a review</h2>
 <section id="standardized-framework-choosen" class="level3">
 <h3 class="anchored" data-anchor-id="standardized-framework-choosen">Standardized framework choosen</h3>
+<p>The non-linear function choosen here has to be asymptotic</p>
+<p><span id="eq-NDVIB"><span class="math display">\[
+B_{a,b,c}(NDVI) = \frac{1}{c}ln\left(\frac{b}{a+b-NDVI}\right)
+\tag{1}\]</span></span></p>
 </section>
 <section id="from-linear-assumptions-to-the-non-linear-framework" class="level3">
 <h3 class="anchored" data-anchor-id="from-linear-assumptions-to-the-non-linear-framework">From linear assumptions to the non-linear framework</h3>
+<p><span id="eq-linearNDVIB"><span class="math display">\[
+\begin{aligned}
+    B_{a,b,c}(NDVI) &amp;= \frac{1}{c}ln\left(\frac{b}{a+b-(x+NDVI_{mean})}\right)\\
+    &amp;= \frac{1}{c}\left[ln\left(\frac{b}{a+b-NDVI_{mean}}\right)-ln\left(1-\frac{x}{a+b-NDVI_{mean}}\right)\right]\\
+    &amp;= \frac{1}{c}\left[ln\left(\frac{b}{a+b-NDVI_{mean}}\right)+\frac{x}{a+b-NDVI_{mean}}\right]\\
+    &amp;= \frac{1}{c}\left[ln\left(\frac{b}{a+b-NDVI_{mean}}\right)+\frac{NDVI - NDVI_{mean}}{a+b-NDVI_{mean}}\right]\\
+    &amp;= \left[\frac{1}{c(a+b-NDVI_{mean})}\right]NDVI\\&amp;+\left[\frac{1}{c}ln\left(\frac{b}{a+b-NDVI_{mean}}\right)-\frac{NDVI_{mean}}{c(a+b-NDVI_{mean})}\right]\\
+\end{aligned}
+\tag{2}\]</span></span></p>
+<p>So we have</p>
+<p><span id="eq-alinear"><span class="math display">\[
+a_{linear} = \frac{1}{c(a+b-NDVI_{mean})}
+\tag{3}\]</span></span></p>
+<p>and</p>
+<p><span id="eq-blinear"><span class="math display">\[
+b_{linear} = \frac{1}{c}ln\left(\frac{b}{a+b-NDVI_{mean}}\right)-\frac{NDVI_{mean}}{c(a+b-NDVI_{mean})}
+\tag{4}\]</span></span></p>
 </section>
 </section>
 </section>

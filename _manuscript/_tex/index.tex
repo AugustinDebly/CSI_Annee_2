@@ -151,8 +151,36 @@ review}\label{ndvi-biomass-relationship-in-microphytobenthic-studies-a-review}
 \subsubsection{Standardized framework
 choosen}\label{standardized-framework-choosen}
 
+The non-linear function choosen here has to be asymptotic
+
+\begin{equation}\phantomsection\label{eq-NDVIB}{
+B_{a,b,c}(NDVI) = \frac{1}{c}ln\left(\frac{b}{a+b-NDVI}\right)
+}\end{equation}
+
 \subsubsection{From linear assumptions to the non-linear
 framework}\label{from-linear-assumptions-to-the-non-linear-framework}
+
+\begin{equation}\phantomsection\label{eq-linearNDVIB}{
+\begin{aligned}
+    B_{a,b,c}(NDVI) &= \frac{1}{c}ln\left(\frac{b}{a+b-(x+NDVI_{mean})}\right)\\
+    &= \frac{1}{c}\left[ln\left(\frac{b}{a+b-NDVI_{mean}}\right)-ln\left(1-\frac{x}{a+b-NDVI_{mean}}\right)\right]\\
+    &= \frac{1}{c}\left[ln\left(\frac{b}{a+b-NDVI_{mean}}\right)+\frac{x}{a+b-NDVI_{mean}}\right]\\
+    &= \frac{1}{c}\left[ln\left(\frac{b}{a+b-NDVI_{mean}}\right)+\frac{NDVI - NDVI_{mean}}{a+b-NDVI_{mean}}\right]\\
+    &= \left[\frac{1}{c(a+b-NDVI_{mean})}\right]NDVI\\&+\left[\frac{1}{c}ln\left(\frac{b}{a+b-NDVI_{mean}}\right)-\frac{NDVI_{mean}}{c(a+b-NDVI_{mean})}\right]\\
+\end{aligned}
+}\end{equation}
+
+So we have
+
+\begin{equation}\phantomsection\label{eq-alinear}{
+a_{linear} = \frac{1}{c(a+b-NDVI_{mean})}
+}\end{equation}
+
+and
+
+\begin{equation}\phantomsection\label{eq-blinear}{
+b_{linear} = \frac{1}{c}ln\left(\frac{b}{a+b-NDVI_{mean}}\right)-\frac{NDVI_{mean}}{c(a+b-NDVI_{mean})}
+}\end{equation}
 
 \section{Scaling Bias}\label{scaling-bias}
 

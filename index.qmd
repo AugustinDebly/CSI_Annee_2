@@ -11,8 +11,34 @@ bibliography: references.bib
 
 ### Standardized framework choosen
 
+The non-linear function choosen here has to be asymptotic
+
+$$
+B_{a,b,c}(NDVI) = \frac{1}{c}ln\left(\frac{b}{a+b-NDVI}\right)
+$$ {#eq-NDVIB}
+
 ### From linear assumptions to the non-linear framework
 
+$$
+\begin{aligned}
+    B_{a,b,c}(NDVI) &= \frac{1}{c}ln\left(\frac{b}{a+b-(x+NDVI_{mean})}\right)\\
+    &= \frac{1}{c}\left[ln\left(\frac{b}{a+b-NDVI_{mean}}\right)-ln\left(1-\frac{x}{a+b-NDVI_{mean}}\right)\right]\\
+    &= \frac{1}{c}\left[ln\left(\frac{b}{a+b-NDVI_{mean}}\right)+\frac{x}{a+b-NDVI_{mean}}\right]\\
+    &= \frac{1}{c}\left[ln\left(\frac{b}{a+b-NDVI_{mean}}\right)+\frac{NDVI - NDVI_{mean}}{a+b-NDVI_{mean}}\right]\\
+    &= \left[\frac{1}{c(a+b-NDVI_{mean})}\right]NDVI\\&+\left[\frac{1}{c}ln\left(\frac{b}{a+b-NDVI_{mean}}\right)-\frac{NDVI_{mean}}{c(a+b-NDVI_{mean})}\right]\\
+\end{aligned}
+$$ {#eq-linearNDVIB}
 
+So we have 
+
+$$
+a_{linear} = \frac{1}{c(a+b-NDVI_{mean})}
+$$ {#eq-alinear}
+
+and 
+
+$$
+b_{linear} = \frac{1}{c}ln\left(\frac{b}{a+b-NDVI_{mean}}\right)-\frac{NDVI_{mean}}{c(a+b-NDVI_{mean})}
+$$ {#eq-blinear}
 
 # Scaling Bias
