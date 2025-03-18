@@ -7,4 +7,12 @@ bibliography: references.bib
 
 # State of the art
 
+## NDVI-Biomass relationship in microphytobenthic studies : a review
+
+### Standardized framework choosen
+
+### From linear assumptions to the non-linear framework
+
+
+
 # Scaling Bias
