@@ -1,0 +1,22 @@
+project:
+  type: manuscript
+
+manuscript:
+  article: index.qmd
+
+format:
+  html:
+    comments:
+      hypothesis: true
+    header-includes:
+      - |
+        <style>
+          body {
+            text-align: justify;
+          }
+        </style>
+    fig-format: svg
+  pdf: default
+
+render: 
+  - "index.qmd"
