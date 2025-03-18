@@ -402,6 +402,11 @@ B_{a,b,c}(NDVI) = \frac{1}{c}ln\left(\frac{b}{a+b-NDVI}\right)
 </section>
 <section id="from-linear-assumptions-to-the-non-linear-framework" class="level3">
 <h3 class="anchored" data-anchor-id="from-linear-assumptions-to-the-non-linear-framework">From linear assumptions to the non-linear framework</h3>
+<p>It’s often made the assumption that the relationship between NDVI and biomass is linear such as :</p>
+<p><span class="math display">\[
+B_{\alpha,\beta}(NDVI) = \alpha NDVI + \beta
+\]</span></p>
+<p>Which is the linearization of the non-linear function around a point, if the NDVI range is small enough.</p>
 <p><span id="eq-linearNDVIB"><span class="math display">\[
 \begin{aligned}
     B_{a,b,c}(NDVI) &amp;= \frac{1}{c}ln\left(\frac{b}{a+b-(x+NDVI_{mean})}\right)\\
@@ -413,12 +418,13 @@ B_{a,b,c}(NDVI) = \frac{1}{c}ln\left(\frac{b}{a+b-NDVI}\right)
 \tag{2}\]</span></span></p>
 <p>So we have</p>
 <p><span id="eq-alinear"><span class="math display">\[
-a_{linear} = \frac{1}{c(a+b-NDVI_{mean})}
+\alpha = \frac{1}{c(a+b-NDVI_{mean})}
 \tag{3}\]</span></span></p>
 <p>and</p>
 <p><span id="eq-blinear"><span class="math display">\[
-b_{linear} = \frac{1}{c}ln\left(\frac{b}{a+b-NDVI_{mean}}\right)-\frac{NDVI_{mean}}{c(a+b-NDVI_{mean})}
+\beta = \frac{1}{c}ln\left(\frac{b}{a+b-NDVI_{mean}}\right)-\frac{NDVI_{mean}}{c(a+b-NDVI_{mean})}
 \tag{4}\]</span></span></p>
+<p>To find <span class="math inline">\(a\)</span>,<span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span> we have 3 unknowns and 2 equations. We must add another constraint, let’s assume</p>
 </section>
 </section>
 </section>

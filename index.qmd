@@ -19,6 +19,14 @@ $$ {#eq-NDVIB}
 
 ### From linear assumptions to the non-linear framework
 
+It's often made the assumption that the relationship between NDVI and biomass is linear such as :
+
+$$
+B_{\alpha,\beta}(NDVI) = \alpha NDVI + \beta
+$$
+
+Which is the linearization of the non-linear function around a point, if the NDVI range is small enough. 
+
 $$
 \begin{aligned}
     B_{a,b,c}(NDVI) &= \frac{1}{c}ln\left(\frac{b}{a+b-(x+NDVI_{mean})}\right)\\
@@ -32,13 +40,15 @@ $$ {#eq-linearNDVIB}
 So we have 
 
 $$
-a_{linear} = \frac{1}{c(a+b-NDVI_{mean})}
+\alpha = \frac{1}{c(a+b-NDVI_{mean})}
 $$ {#eq-alinear}
 
 and 
 
 $$
-b_{linear} = \frac{1}{c}ln\left(\frac{b}{a+b-NDVI_{mean}}\right)-\frac{NDVI_{mean}}{c(a+b-NDVI_{mean})}
+\beta = \frac{1}{c}ln\left(\frac{b}{a+b-NDVI_{mean}}\right)-\frac{NDVI_{mean}}{c(a+b-NDVI_{mean})}
 $$ {#eq-blinear}
+
+To find $a$,$b$ and $c$ we have 3 unknowns and 2 equations. We must add another constraint, let's assume 
 
 # Scaling Bias

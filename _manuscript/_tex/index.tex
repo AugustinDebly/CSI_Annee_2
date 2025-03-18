@@ -160,6 +160,16 @@ B_{a,b,c}(NDVI) = \frac{1}{c}ln\left(\frac{b}{a+b-NDVI}\right)
 \subsubsection{From linear assumptions to the non-linear
 framework}\label{from-linear-assumptions-to-the-non-linear-framework}
 
+It's often made the assumption that the relationship between NDVI and
+biomass is linear such as :
+
+\[
+B_{\alpha,\beta}(NDVI) = \alpha NDVI + \beta
+\]
+
+Which is the linearization of the non-linear function around a point, if
+the NDVI range is small enough.
+
 \begin{equation}\phantomsection\label{eq-linearNDVIB}{
 \begin{aligned}
     B_{a,b,c}(NDVI) &= \frac{1}{c}ln\left(\frac{b}{a+b-(x+NDVI_{mean})}\right)\\
@@ -173,14 +183,17 @@ framework}\label{from-linear-assumptions-to-the-non-linear-framework}
 So we have
 
 \begin{equation}\phantomsection\label{eq-alinear}{
-a_{linear} = \frac{1}{c(a+b-NDVI_{mean})}
+\alpha = \frac{1}{c(a+b-NDVI_{mean})}
 }\end{equation}
 
 and
 
 \begin{equation}\phantomsection\label{eq-blinear}{
-b_{linear} = \frac{1}{c}ln\left(\frac{b}{a+b-NDVI_{mean}}\right)-\frac{NDVI_{mean}}{c(a+b-NDVI_{mean})}
+\beta = \frac{1}{c}ln\left(\frac{b}{a+b-NDVI_{mean}}\right)-\frac{NDVI_{mean}}{c(a+b-NDVI_{mean})}
 }\end{equation}
+
+To find \(a\),\(b\) and \(c\) we have 3 unknowns and 2 equations. We
+must add another constraint, let's assume
 
 \section{Scaling Bias}\label{scaling-bias}
 
