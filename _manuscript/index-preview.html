@@ -1,28 +1,151 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="generator" content="quarto-1.4.550">
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
-<title>CSI DEBLY Augustin 2nd year</title>
-<style>
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-  vertical-align: middle;
-}
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
+    <title>CSI DEBLY Augustin 2nd year</title>
+    <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      div.columns{display: flex; gap: min(4vw, 1.5em);}
+      div.column{flex: auto; overflow-x: auto;}
+      div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+      ul.task-list{list-style: none;}
+      ul.task-list li input[type="checkbox"] {
+        width: 0.8em;
+        margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+        vertical-align: middle;
+      }
+      /* CSS for syntax highlighting */
+      pre > code.sourceCode { white-space: pre; position: relative; }
+      pre > code.sourceCode > span { line-height: 1.25; }
+      pre > code.sourceCode > span:empty { height: 1.2em; }
+      .sourceCode { overflow: visible; }
+      code.sourceCode > span { color: inherit; text-decoration: inherit; }
+      div.sourceCode { margin: 1em 0; }
+      pre.sourceCode { margin: 0; }
+      @media screen {
+      div.sourceCode { overflow: auto; }
+      }
+      @media print {
+      pre > code.sourceCode { white-space: pre-wrap; }
+      pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+      }
+      pre.numberSource code
+        { counter-reset: source-line 0; }
+      pre.numberSource code > span
+        { position: relative; left: -4em; counter-increment: source-line; }
+      pre.numberSource code > span > a:first-child::before
+        { content: counter(source-line);
+          position: relative; left: -1em; text-align: right; vertical-align: baseline;
+          border: none; display: inline-block;
+          -webkit-touch-callout: none; -webkit-user-select: none;
+          -khtml-user-select: none; -moz-user-select: none;
+          -ms-user-select: none; user-select: none;
+          padding: 0 4px; width: 4em;
+        }
+      pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+      div.sourceCode
+        {   }
+      @media screen {
+      pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+      }
+    </style>
+
+    <style>
+      body.hypothesis-enabled #quarto-embed-header {
+        padding-right: 36px;
+      }
+
+      #quarto-embed-header {
+        height: 3em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 1px;
+      }
+
+      #quarto-embed-header h6 {
+        font-size: 1.1em;
+        padding-top: 0.6em;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-weight: 400;
+      }
+
+      #quarto-embed-header a.quarto-back-link,
+      #quarto-embed-header a.quarto-download-embed {
+        font-size: 0.8em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+
+      .quarto-back-container {
+        padding-left: 0.5em;
+        display: flex;
+      }
+
+      .headroom {
+          will-change: transform;
+          transition: transform 200ms linear;
+      }
+
+      .headroom--pinned {
+          transform: translateY(0%);
+      }
+
+      .headroom--unpinned {
+          transform: translateY(-100%);
+      }      
+    </style>
+
+    <script>
+    window.document.addEventListener("DOMContentLoaded", function () {
+
+      var header = window.document.querySelector("#quarto-embed-header");
+      const titleBannerEl = window.document.querySelector("body > #title-block-header");
+      if (titleBannerEl) {
+        titleBannerEl.style.paddingTop = header.clientHeight + "px";
+      }
+      const contentEl = window.document.getElementById('quarto-content');
+      for (const child of contentEl.children) {
+        child.style.paddingTop = header.clientHeight + "px";
+        child.style.marginTop = "1em";
+      }
+
+      // Use the article root if the `back` call doesn't work. This isn't perfect
+      // but should typically work
+      window.quartoBackToArticle = () => {
+        var currentUrl = window.location.href;
+        window.history.back();
+        setTimeout(() => {
+            // if location was not changed in 100 ms, then there is no history back
+            if(currentUrl === window.location.href){              
+                // redirect to site root
+                window.location.href = "index.html";
+            }
+        }, 100);
+      }
+
+      const headroom = new window.Headroom(header, {
+        tolerance: 5,
+        onPin: function () {
+        },
+        onUnpin: function () {
+        },
+      });
+      headroom.init();
+    });
+    </script>
+
+    
+<script src="site_libs/manuscript-notebook/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -33,51 +156,18 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script async="" src="https://hypothes.is/embed.js"></script>
+     <script async="" src="https://hypothes.is/embed.js"></script>
 <script>
   window.document.addEventListener("DOMContentLoaded", function (_event) {
     document.body.classList.add('hypothesis-enabled');
   });
-</script>
-<link href="site_libs/tabwid-1.1.3/tabwid.css" rel="stylesheet">
-<script src="site_libs/tabwid-1.1.3/tabwid.js"></script>
-<style>
+</script>  <link href="site_libs/tabwid-1.1.3/tabwid.css" rel="stylesheet">
+<script src="site_libs/tabwid-1.1.3/tabwid.js"></script>  <style>
   body {
     text-align: justify;
   }
-</style>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<meta name="citation_title" content="CSI DEBLY Augustin 2nd year">
+</style>   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script> 
+      <meta name="citation_title" content="CSI DEBLY Augustin 2nd year">
 <meta name="citation_author" content="Augustin Debly">
 <meta name="citation_language" content="en">
 <meta name="citation_reference" content="citation_title=Exploring flow-biofilm-sediment interactions: Assessment of current status and future challenges;,citation_abstract=Biofilm activities and their interactions with physical, chemical and biological processes are of great importance for a variety of ecosystem functions, impacting hydrogeomorphology, water quality and aquatic ecosystem health. Effective management of water bodies requires advancing our understanding of how flow influences biofilm-bound sediment and ecosystem processes and vice-versa. However, research on this triangle of flow-biofilm-sediment is still at its infancy. In this Review, we summarize the current state of the art and methodological approaches in the flow-biofilm-sediment research with an emphasis on biostabilization and fine sediment dynamics mainly in the benthic zone of lotic and lentic environments. Example studies of this three-way interaction across a range of spatial scales from cell (nm – µm) to patch scale (mm – dm) are highlighted in view of the urgent need for interdisciplinary approaches. As a contribution to the review, we combine a literature survey with results of a pilot experiment that was conducted in the framework of a joint workshop to explore the feasibility of asking interdisciplinary questions. Further, within this workshop various observation and measuring approaches were tested and the quality of the achieved results was evaluated individually and in combination. Accordingly, the paper concludes by highlighting the following research challenges to be considered within the forthcoming years in the triangle of flow-biofilm-sediment: i) Establish a collaborative work among hydraulic and sedimentation engineers as well as ecologists to study mutual goals with appropriate methods. Perform realistic experimental studies to test hypotheses on flow-biofilm-sediment interactions as well as structural and mechanical characteristics of the bed. ii) Consider spatially varying characteristics of flow at the sediment-water interface. Utilize combinations of microsensors and non-intrusive optical methods, such as particle image velocimetry and laser scanner to elucidate the mechanism behind biofilm growth as well as mass and momentum flux exchanges between biofilm and water. Use molecular approaches (DNA, pigments, staining, microscopy) for sophisticated community analyses. Link varying flow regimes to microbial communities (and processes) and fine sediment properties to explore the role of key microbial players and functions in enhancing sediment stability (biostabilization). iii) Link laboratory-scale observations to larger scales relevant for management of water bodies. Conduct field experiments to better understand the complex effects of variable flow and sediment regimes on biostabilization. Employ scalable and informative observation techniques (e.g., hyperspectral imaging, particle tracking) that can support predictions on the functional aspects, such as metabolic activity, bed stability, nutrient fluxes under variable regimes of flow-biofilm-sediment.;,citation_author=Sabine Ulrike Gerbersdorf;,citation_author=Kaan Koca;,citation_author=Dirk Beer;,citation_author=Arjun Chennu;,citation_author=Christian Noss;,citation_author=Ute Risse-Buhl;,citation_author=Markus Weitere;,citation_author=Olivier Eiff;,citation_author=Michael Wagner;,citation_author=Jochen Aberle;,citation_author=Michael Schweikert;,citation_author=Kristina Terheiden;,citation_publication_date=2020-10;,citation_cover_date=2020-10;,citation_year=2020;,citation_fulltext_html_url=https://www.sciencedirect.com/science/article/pii/S0043135420307193;,citation_doi=10.1016/j.watres.2020.116182;,citation_issn=0043-1354;,citation_volume=185;,citation_journal_title=Water Research;">
@@ -331,9 +421,16 @@ window.Quarto = {
 <meta name="citation_reference" content="citation_title=Exploiting the multi-angularity of the MODIS temporal signal to identify spatially homogeneous vegetation cover: A demonstration for agricultural monitoring applications;,citation_abstract=Abstract MODIS has been providing daily imagery for retrieving land surface properties with a spatial resolution 250m since the year 2000. In many places, this pixel size is closer to that of individual landscape elements, such as managed forest stands or crop fields, than those of time series more typically used in vegetation analyses (with pixel sizes ranging from about 1km to 8km). With such spatial resolution, combined with its increasingly long archive, MODIS data offers great potential for vegetation monitoring applications in general, and crop growth monitoring in particular. However, due to its whiskbroom design, the observation geometry of the MODIS instrument, combined with the spatial uncertainty in the registration of the images, can result in different (albeit neighbouring) physical areas being mapped onto the same pixel depending on the view zenith angle (which varies from day to the next). Rather than considering this as an inconvenience, a method is here proposed to exploit this peculiarity to identify pixels corresponding to a homogeneous plant cover, in order to retrieve surface specific time series of satellite products. This method is based on quantifying the temporal signal-to-noise ratio (SNR, hereafter) of the daily MODIS NDVI time series, defined as the variance of smoothed temporal signal over the variance of the residues. If consecutive observations of the same pixel (which have thus sampled the spatial vicinity of that pixel) provide similar NDVI values, the resulting temporal signal is relatively stable and the SNR is high. Such stability can indicate that the signal comes from a spatially homogeneous surface, such as a single large field covered by the same crop with similar agro-management practices. On the contrary, a noisy time series indicates instead a transition zone between different land uses or between fields with different management practices. SNR maps therefore serve as a proxy for sub-pixel homogeneity from which time series originating from a specific land cover or land use can be retrieved. This approach is demonstrated over 12 contrasting agricultural landscapes across the globe from which clearly distinctive crop specific signals are extracted. Exploiting the full MODIS archive to derive surface specific information in this way should open new avenues for regional to global agricultural monitoring applications. Expanding this method to derive satellite products for specific land cover classes could also be useful for many other applications linked to dynamics of land cover and land use change.;,citation_author=Grégory Duveiller;,citation_author=Gregory Duveiller;,citation_author=Raúl López-Lozano;,citation_author=Raúl López-Lozano;,citation_author=Alessandro Cescatti;,citation_author=Alessandro Cescatti;,citation_publication_date=2015-09;,citation_cover_date=2015-09;,citation_year=2015;,citation_doi=10.1016/j.rse.2015.06.001;,citation_volume=166;,citation_journal_title=Remote Sensing of Environment;">
 </head>
 
-<body>
+  <body class="quarto-notebook">
+    <div id="quarto-embed-header" class="headroom fixed-top bg-primary">
+      
+      <a onclick="window.quartoBackToArticle(); return false;" class="btn btn-primary quarto-back-link" href=""><i class="bi bi-caret-left"></i> Back to Article</a>
+      <h6><i class="bi bi-journal-code"></i> Article Notebook</h6>
 
-<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+            <a href="./index.qmd" class="btn btn-primary quarto-download-embed" download="index.qmd">Download Source</a>
+          </div>
+
+     <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">CSI DEBLY Augustin 2nd year</h1>
@@ -357,7 +454,7 @@ window.Quarto = {
               </div>
       </div>
       <div class="quarto-title-meta-column-end quarto-other-formats-target">
-      <div class="quarto-alternate-formats"><div class="quarto-title-meta-heading">Other Formats</div><div class="quarto-title-meta-contents"><p><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></p></div></div></div>
+      </div>
     </div>
 
 
@@ -381,28 +478,95 @@ window.Quarto = {
   </ul></li>
   <li><a href="#scaling-bias" id="toc-scaling-bias" class="nav-link" data-scroll-target="#scaling-bias">Scaling Bias</a></li>
   </ul>
-<div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="index-preview.html"><i class="bi bi-journal-code"></i>Article Notebook</a></li></ul></div></nav>
+</nav>
 </div>
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
 </div>
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">      
 
-
-
-  
-
-
-<section id="state-of-the-art" class="level1">
+       <section id="state-of-the-art" class="level1">
 <h1>State of the art</h1>
 <section id="ndvi-biomass-relationship-in-microphytobenthic-studies-a-review" class="level2">
 <h2 class="anchored" data-anchor-id="ndvi-biomass-relationship-in-microphytobenthic-studies-a-review">NDVI-Biomass relationship in microphytobenthic studies : a review</h2>
 <section id="state-of-the-art-1" class="level3">
 <h3 class="anchored" data-anchor-id="state-of-the-art-1">State of the art</h3>
-<div class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(flextable)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'flextable' was built under R version 4.3.3</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'tidyverse' was built under R version 4.3.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'readr' was built under R version 4.3.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'forcats' was built under R version 4.3.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.4.4     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.0
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ purrr::compose() masks flextable::compose()
+✖ dplyr::filter()  masks stats::filter()
+✖ dplyr::lag()     masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>form_1     <span class="ot">=</span> <span class="st">"$$NDVI = a B + b$$"</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>form_2     <span class="ot">=</span> <span class="st">"$$NDVI = a + b</span><span class="sc">\\</span><span class="st">left(1-e^{-cB}</span><span class="sc">\\</span><span class="st">right)$$"</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>form_3     <span class="ot">=</span> <span class="st">"$$NDVI = </span><span class="sc">\\</span><span class="st">left(</span><span class="sc">\\</span><span class="st">frac{B-a}{b}</span><span class="sc">\\</span><span class="st">right)^{1/c}$$"</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>form_4     <span class="ot">=</span> <span class="st">"$$NDVI = </span><span class="sc">\\</span><span class="st">frac{1}{b}</span><span class="sc">\\</span><span class="st">ln</span><span class="sc">\\</span><span class="st">left(</span><span class="sc">\\</span><span class="st">frac{1}{a}B</span><span class="sc">\\</span><span class="st">right)$$"</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>lim_0_1    <span class="ot">=</span> <span class="st">"$$b$$"</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>lim_0_2    <span class="ot">=</span> <span class="st">"$$a$$"</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>lim_0_3    <span class="ot">=</span> <span class="st">"$$</span><span class="sc">\\</span><span class="st">left(</span><span class="sc">\\</span><span class="st">frac{-a}{b}</span><span class="sc">\\</span><span class="st">right)^{1/c}$$"</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>lim_0_4    <span class="ot">=</span> <span class="st">"$$-</span><span class="sc">\\</span><span class="st">infty$$"</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>lim_inf_1    <span class="ot">=</span> <span class="st">"$$+</span><span class="sc">\\</span><span class="st">infty$$"</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>lim_inf_2    <span class="ot">=</span> <span class="st">"$$a+b$$"</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>lim_inf_3    <span class="ot">=</span> <span class="st">"$$+</span><span class="sc">\\</span><span class="st">infty$$"</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>lim_inf_4    <span class="ot">=</span> <span class="st">"$$+</span><span class="sc">\\</span><span class="st">infty$$"</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>form_1_bis <span class="ot">=</span> <span class="st">"$$B = (1/a) NDVI - (b/a)$$"</span></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>form_2_bis <span class="ot">=</span> <span class="st">"$$B = (1/a) NDVI - (b/a)+1$$"</span></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>form_3_bis <span class="ot">=</span> <span class="st">"$$B = (1/a) NDVI - (b/a)+2$$"</span></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>form_4_bis <span class="ot">=</span> <span class="st">"$$B = (1/a) NDVI - (b/a)+3$$"</span></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"Forme"</span>            <span class="ot">=</span> <span class="fu">c</span>(form_1,form_1,form_1,form_1,form_1,form_1,form_1,form_2,form_3,form_4,form_4),</span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"Limite en 0"</span>      <span class="ot">=</span> <span class="fu">c</span>(lim_0_1,lim_0_1,lim_0_1,lim_0_1,lim_0_1,lim_0_1,lim_0_1,lim_0_2,lim_0_3,lim_0_4,lim_0_4),</span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"Limite en +inf"</span>   <span class="ot">=</span> <span class="fu">c</span>(lim_inf_1,lim_inf_1,lim_inf_1,lim_inf_1,lim_inf_1,lim_inf_1,lim_inf_1,lim_inf_2,lim_inf_3,lim_inf_4,lim_inf_4),</span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"Fonction inverse"</span> <span class="ot">=</span> <span class="fu">c</span>(form_1_bis,form_1_bis,form_1_bis,form_1_bis,form_1_bis,form_1_bis,form_1_bis,form_2_bis,form_3_bis,form_4_bis,form_4_bis),</span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"Nom"</span>              <span class="ot">=</span> <span class="fu">c</span>(<span class="st">""</span>),</span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"Site"</span>             <span class="ot">=</span> <span class="fu">c</span>(<span class="st">""</span>),</span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"Periode"</span>          <span class="ot">=</span> <span class="fu">c</span>(<span class="st">""</span>),</span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"a"</span>                <span class="ot">=</span> <span class="fu">c</span>(<span class="st">""</span>),</span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"b"</span>                <span class="ot">=</span> <span class="fu">c</span>(<span class="st">""</span>),</span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"c"</span>                <span class="ot">=</span> <span class="fu">c</span>(<span class="st">""</span>))</span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>ft <span class="ot">&lt;-</span> <span class="fu">flextable</span>(df)</span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>ft <span class="ot">&lt;-</span> <span class="fu">add_header_row</span>(ft,</span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>                     <span class="at">colwidths =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">3</span>, <span class="dv">3</span>),</span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>                     <span class="at">values =</span> <span class="fu">c</span>(<span class="st">"Fonction"</span>, <span class="st">"Publication"</span>,<span class="st">"Paramètres"</span>)</span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a>ft <span class="ot">&lt;-</span> <span class="fu">merge_v</span>(ft,<span class="at">j =</span> <span class="st">"Forme"</span>)</span>
+<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a>ft <span class="ot">&lt;-</span> <span class="fu">merge_v</span>(ft,<span class="at">j =</span> <span class="st">"Limite.en.0"</span>)</span>
+<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a>ft <span class="ot">&lt;-</span> <span class="fu">merge_v</span>(ft,<span class="at">j =</span> <span class="st">"Limite.en..inf"</span>)</span>
+<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a>ft <span class="ot">&lt;-</span> <span class="fu">merge_v</span>(ft,<span class="at">j =</span> <span class="st">"Fonction.inverse"</span>)</span>
+<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a>ft <span class="ot">&lt;-</span> <span class="fu">theme_vanilla</span>(ft)</span>
+<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a>ft <span class="ot">&lt;-</span> <span class="fu">align</span>(ft, <span class="at">align =</span> <span class="st">"center"</span>, <span class="at">part =</span> <span class="st">"header"</span>)</span>
+<span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a>ft <span class="ot">&lt;-</span> <span class="fu">align</span>(ft, <span class="at">align =</span> <span class="st">"left"</span>, <span class="at">j =</span> <span class="fu">c</span>(<span class="st">"Forme"</span>, <span class="st">"Fonction.inverse"</span>))</span>
+<span id="cb8-45"><a href="#cb8-45" aria-hidden="true" tabindex="-1"></a>ft</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div class="tabwid"><style>.cl-1e525c40{}.cl-1e4616f6{font-family:'Arial';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-1e46170a{font-family:'Arial';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-1e4f5784{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-1e4f578e{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-1e4f64ae{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0.75pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-1e4f64b8{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0.75pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-1e4f64b9{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0.75pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-1e4f64ba{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0.75pt solid rgba(102, 102, 102, 1.00);border-top: 0.75pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-1e4f64bb{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0.75pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-1e525c40"><thead><tr style="overflow-wrap:break-word;"><th colspan="4" class="cl-1e4f64ae"><p class="cl-1e4f5784"><span class="cl-1e4616f6">Fonction</span></p></th><th colspan="3" class="cl-1e4f64ae"><p class="cl-1e4f5784"><span class="cl-1e4616f6">Publication</span></p></th><th colspan="3" class="cl-1e4f64ae"><p class="cl-1e4f5784"><span class="cl-1e4616f6">Paramètres</span></p></th></tr><tr style="overflow-wrap:break-word;"><th class="cl-1e4f64b8"><p class="cl-1e4f5784"><span class="cl-1e4616f6">Forme</span></p></th><th class="cl-1e4f64b8"><p class="cl-1e4f5784"><span class="cl-1e4616f6">Limite.en.0</span></p></th><th class="cl-1e4f64b8"><p class="cl-1e4f5784"><span class="cl-1e4616f6">Limite.en..inf</span></p></th><th class="cl-1e4f64b8"><p class="cl-1e4f5784"><span class="cl-1e4616f6">Fonction.inverse</span></p></th><th class="cl-1e4f64b8"><p class="cl-1e4f5784"><span class="cl-1e4616f6">Nom</span></p></th><th class="cl-1e4f64b8"><p class="cl-1e4f5784"><span class="cl-1e4616f6">Site</span></p></th><th class="cl-1e4f64b8"><p class="cl-1e4f5784"><span class="cl-1e4616f6">Periode</span></p></th><th class="cl-1e4f64b8"><p class="cl-1e4f5784"><span class="cl-1e4616f6">a</span></p></th><th class="cl-1e4f64b8"><p class="cl-1e4f5784"><span class="cl-1e4616f6">b</span></p></th><th class="cl-1e4f64b8"><p class="cl-1e4f5784"><span class="cl-1e4616f6">c</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td rowspan="7" class="cl-1e4f64b9"><p class="cl-1e4f578e"><span class="cl-1e46170a">$$NDVI = a B + b$$</span></p></td><td rowspan="7" class="cl-1e4f64b9"><p class="cl-1e4f578e"><span class="cl-1e46170a">$$b$$</span></p></td><td rowspan="7" class="cl-1e4f64b9"><p class="cl-1e4f578e"><span class="cl-1e46170a">$$+\infty$$</span></p></td><td rowspan="7" class="cl-1e4f64b9"><p class="cl-1e4f578e"><span class="cl-1e46170a">$$B = (1/a) NDVI - (b/a)$$</span></p></td><td class="cl-1e4f64b9"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64b9"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64b9"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64b9"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64b9"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64b9"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a">$$NDVI = a + b\left(1-e^{-cB}\right)$$</span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a">$$a$$</span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a">$$a+b$$</span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a">$$B = (1/a) NDVI - (b/a)+1$$</span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a">$$NDVI = \left(\frac{B-a}{b}\right)^{1/c}$$</span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a">$$\left(\frac{-a}{b}\right)^{1/c}$$</span></p></td><td rowspan="3" class="cl-1e4f64bb"><p class="cl-1e4f578e"><span class="cl-1e46170a">$$+\infty$$</span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a">$$B = (1/a) NDVI - (b/a)+2$$</span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td rowspan="2" class="cl-1e4f64bb"><p class="cl-1e4f578e"><span class="cl-1e46170a">$$NDVI = \frac{1}{b}\ln\left(\frac{1}{a}B\right)$$</span></p></td><td rowspan="2" class="cl-1e4f64bb"><p class="cl-1e4f578e"><span class="cl-1e46170a">$$-\infty$$</span></p></td><td rowspan="2" class="cl-1e4f64bb"><p class="cl-1e4f578e"><span class="cl-1e46170a">$$B = (1/a) NDVI - (b/a)+3$$</span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64ba"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-1e4f64bb"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64bb"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64bb"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64bb"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64bb"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td><td class="cl-1e4f64bb"><p class="cl-1e4f578e"><span class="cl-1e46170a"></span></p></td></tr></tbody></table></div>
 </div>
-<a class="quarto-notebook-link" id="nblink-1" href="index-preview.html">Source: Article Notebook</a></div>
+</div></div>
 </section>
 <section id="standardized-framework-choosen" class="level3">
 <h3 class="anchored" data-anchor-id="standardized-framework-choosen">Standardized framework choosen</h3>
@@ -445,10 +609,8 @@ B_{\alpha,\beta}(NDVI) = \alpha NDVI + \beta
 <section id="scaling-bias" class="level1">
 <h1>Scaling Bias</h1>
 </section>
-
-</main>
-<!-- /main column -->
-<script id="quarto-html-after-body" type="application/javascript">
+     </main>
+<!-- /main column -->  <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -834,10 +996,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
-</div> <!-- /content -->
-
-
-
-
+</script>  </div> <!-- /content --> 
+  
 </body></html>
